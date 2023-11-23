@@ -21,8 +21,9 @@ services:
     restart: always
     networks:
       - fullcycle
-    command: npm start  
-    working_dir: /usr/src/app
+    volumes:
+      - ./backend:/app
+    command: npm start
     depends_on:
       - db 
 

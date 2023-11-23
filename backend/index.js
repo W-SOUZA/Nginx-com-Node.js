@@ -31,7 +31,7 @@ const createTable = () => {
 };
 
 const insertData = () => {
-  const nomes = ['Wesley', 'Luiz', 'Livia'];
+  const nomes = ['Wesley', 'Luiz', 'Lucia'];
   nomes.forEach((nome) => {
     const sql = `INSERT INTO people (nome) VALUES ('${nome}')`;
     db.query(sql, (err, resultado) => {
